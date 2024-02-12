@@ -1,0 +1,429 @@
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+}
+.center {
+  padding-left: calc(50% - 680px);
+  padding-right: calc(50% - 680px);
+}
+
+.header {
+  margin-bottom: 28px;
+  &_colorLine {
+    height: 16px;
+    margin: 8px 8px 32px 8px;
+    background-color: $color-light-white;
+  }
+  &_box {
+    display: flex;
+    margin-left: 72px;
+    margin-right: 75px;
+    gap: 50px;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: 1224px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  &_linksBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &_link {
+    text-decoration: none;
+  }
+}
+.nav {
+  display: flex;
+  gap: 39px;
+  @media (max-width: 1224px) {
+    gap: 25px;
+  }
+  &_link {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 1.58px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+.logo {
+  position: absolute;
+  left: calc(50% - 44px);
+}
+.mainSection {
+  box-sizing: border-box;
+  margin-bottom: 90px;
+  &_imgBox {
+    position: relative;
+    padding: 16px;
+    background-color: $color-light-white;
+    margin-bottom: 87.5px;
+  }
+  &_img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  &_title {
+    color: $color-text;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 81px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &_titleBlock {
+    padding: 6.5px 83px 0 83px;
+  }
+  &_linksBox {
+    display: flex;
+    gap: 68px;
+    justify-content: center;
+  }
+  &_link {
+    display: flex;
+    border-bottom: 2px solid $color-text;
+    align-items: center;
+  }
+  &_linkText {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 1.6px;
+    text-align: center;
+    margin-right: 8px;
+  }
+}
+
+.mainImg {
+  &_info {
+    position: absolute;
+    bottom: 64px;
+    right: 64px;
+    text-align: right;
+  }
+  &_text {
+    color: $color-text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 1.8px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  &_title {
+    color: $color-text;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60.48px;
+    letter-spacing: 0%;
+    text-align: right;
+    margin-bottom: 25px;
+  }
+  &_button {
+    width: 154px;
+    height: 56px;
+    background-color: $color-text;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+  }
+  &_link {
+    color: $color-light-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.36px;
+    letter-spacing: 1.58px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.mapleBoardSection {
+  margin-bottom: 23px;
+  &_title {
+    color: $color-text;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.4px;
+    text-align: center;
+    padding-top: 63px;
+    padding-bottom: 80px;
+    background-color: $color-light-white;
+  }
+}
+.boards {
+  background-color: $color-light-white;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding: 0 32px 81px 32px;
+}
+.board {
+  &_card {
+    color: rgb(113, 115, 83);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.92px;
+    letter-spacing: 1.62px;
+    text-align: center;
+    flex-grow: 1;
+  }
+  &_img {
+    width: 100%;
+  }
+  &_name {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 7px;
+  }
+  &_price {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.92px;
+    letter-spacing: 1.62px;
+    text-align: center;
+  }
+}
+
+.essentialsSection {
+  position: relative;
+  margin-bottom: 24px;
+  &_title {
+    color: $color-text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+  &_text {
+    color: $color-text;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60.48px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 11px 118px 0 118px;
+  }
+  &_img {
+    padding: 16px;
+    background-color: $color-light-white;
+    width: 100%;
+    height: 100%;
+  }
+  &_textBox {
+    position: absolute;
+    top: 78px;
+  }
+}
+
+.section_box {
+  display: flex;
+  gap: 32px;
+  background-color: $color-light-white;
+  padding: 64px 32px 64px 32px;
+  margin-bottom: 24px;
+}
+
+.section_boxReverse {
+  flex-direction: row-reverse;
+}
+
+.section {
+  &_img {
+    min-width: 300px;
+    max-width: 743px;
+  }
+  &_textBox {
+    padding-top: 62px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_line {
+    width: 40px;
+    height: 1px;
+    background-color: $color-text;
+    margin: 32px 0 33px 0;
+  }
+  &_title {
+    color: $color-text;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 38.88px;
+    text-align: center;
+  }
+  &_text {
+    color: $color-text;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32.4px;
+    text-align: center;
+    width: 347px;
+  }
+}
+.signUpSection {
+  margin-bottom: 40px;
+}
+.signUp {
+  &_infoBox {
+    background-color: $color-light-white;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  &_title {
+    color: $color-text;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38.88px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 63px;
+    padding-bottom: 16px;
+  }
+  &_text {
+    color: $color-text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+  &_form {
+    color: $color-text;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 63px;
+    justify-content: center;
+  }
+  &_input {
+    border: none;
+    border-bottom: 1px solid $color-text;
+    background-color: transparent;
+    outline: none;
+    padding-left: 5px;
+    margin-right: 5px;
+  }
+  &_button {
+    color: $color-light-white;
+    background-color: #56593d;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    width: 144px;
+    height: 22px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.72px;
+    letter-spacing: 1.6px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.kinnMomentsSection {
+}
+.kinnMoments {
+  &_title {
+    background-color: $color-light-white;
+    color: $color-text;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32.4px;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 39px;
+  }
+  &_fotosBox {
+    background-color: $color-light-white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 0 28px 64px 28px;
+  }
+  &_foto {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #717353;
+  padding: 64.2px 32px 96.8px 32px;
+  margin: 128px 8px 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  &_text {
+    color: $color-light-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &_line {
+    width: 40px;
+    height: 1px;
+    background-color: $color-light-white;
+  }
+  &_title {
+    padding-bottom: 17px;
+  }
+  &_info {
+    display: flex;
+  }
+  &_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 25px;
+  }
+  &_navBox {
+    margin-right: 248px;
+  }
+  &_contacts {
+    width: 256px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin-right: 124px;
+  }
+  &_links {
+    display: flex;
+    gap: 19px;
+  }
+  &_link {
+    text-decoration: none;
+  }
+}
+.contacts {
+  &_text {
+    padding-top: 2px;
+    text-transform: inherit;
+  }
+}
