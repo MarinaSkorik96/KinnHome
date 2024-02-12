@@ -38,6 +38,7 @@ body {
     gap: 20px;
   }
   &_link {
+    position: relative;
     text-decoration: none;
   }
 }
@@ -61,6 +62,17 @@ body {
 .logo {
   position: absolute;
   left: calc(50% - 44px);
+}
+.cart_counter {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 10.5px;
+  background-color: $color-light-white;
+  color: $color-text;
+  text-align: center;
+  top: 17px;
+  left: 16px;
 }
 .mainSection {
   box-sizing: border-box;
@@ -225,6 +237,7 @@ body {
     letter-spacing: 0%;
     text-align: center;
     padding: 11px 118px 0 118px;
+    width: 1093px;
   }
   &_img {
     padding: 16px;
@@ -385,6 +398,7 @@ body {
     text-align: left;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 2px;
   }
   &_line {
     width: 40px;
@@ -425,5 +439,6 @@ body {
   &_text {
     padding-top: 2px;
     text-transform: inherit;
+    letter-spacing: 0px;
   }
 }
